@@ -3,6 +3,10 @@
 const traverse = require("traverse");
 const fs = require('fs');
 
+// update a single property on a node
+// current = this
+// property = the property name
+// value = the value to set
 function updateNodeProperty(current, property, value){
     var node = current.node;
     if (current.node[property] !== "unbounded") {
@@ -11,9 +15,10 @@ function updateNodeProperty(current, property, value){
     }
 }
 
+
 function convertToInt(current, property) {
-    if (typeof current.node === 'object' && current.node[property]) {
-        if (current.node[property] !== "unbounded") {
+    if (current.node[property]) {
+        if (!isNan(current.node[property])) {
             updateNodeProperty(current, property, parseInt(current.node[property], 10));
         }
     }
