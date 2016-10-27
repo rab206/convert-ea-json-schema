@@ -4,7 +4,7 @@
   "description": "Converts the json schema exported from EA13Beta to a valid json schema format",
   "main": "convert.js",
   "dependencies": {
-    "traverse": "^0.6.6",
+    "traverse": "^0.6.6"
   },
   "author": "Adam Bennett",
   "license": "ISC"
