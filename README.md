@@ -1,4 +1,4 @@
-# convert-ea-schema
+# convert-ea-json-schema
 Converts the json schema exported from EA13Beta to a valid json schema format. 
 Once the conversions have taken place the final schema is validated against the v4 master json schema.
 
