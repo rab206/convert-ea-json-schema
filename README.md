@@ -66,6 +66,16 @@ Example;
      "maxItems": "unbounded"
 }
 ```
+Fixed;
+```javascript
+"order": {
+    "type": "array",
+    "minItems": 1,
+    "items": {
+        "$ref": "#/definitions/order"
+    }
+}
+```
 
 #### None of the items are marked as mandatory
 Example;
