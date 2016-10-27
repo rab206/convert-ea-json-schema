@@ -1,11 +1,13 @@
 {
-  "name": "convert-ea-schema",
+  "name": "convert-ea-json-schema",
   "version": "1.0.0",
   "description": "Converts the json schema exported from EA13Beta to a valid json schema format",
   "main": "convert.js",
   "dependencies": {
-    "traverse": "^0.6.6"
+    "traverse": "^0.6.6",
+    "ajv": "^4.8.2"
   },
+  "repository": "rab206/convert-ea-json-schema",
   "author": "Adam Bennett",
   "license": "ISC"
 }
