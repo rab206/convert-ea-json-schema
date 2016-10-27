@@ -2,6 +2,14 @@
 Converts the json schema exported from EA13Beta to a valid json schema format. 
 Once the conversions have taken place the final schema is validated against the v4 master json schema.
 
+## Installation
+Download package from github;
+git clone https://github.com/rab206/convert-ea-json-schema.git
+Install node packages;
+npm install
+Execute script;
+./convert.js {path to raw schema} > {target file name}
+
 ## Conversions
 These are the issues in the generated files that are fixed by this script
 
